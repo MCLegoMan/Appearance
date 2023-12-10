@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "appearance",
+	"version": "${version}",
+	"name": "Appearance",
+	"description": "Fabric/Quilt mod that can change a player's skin via a resource pack. ",
+	"authors": [
+		"MCLegoMan"
+	],
+	"contact": {
+		"homepage": "https://mclegoman.com",
+		"sources": "https://github.com/MCLegoMan/Appearance",
+		"issues": "https://github.com/MCLegoMan/Appearance/issues"
+	},
+	"license": "LGPL-3.0-or-later",
+	"icon": "assets/appearance/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.mclegoman.appearance.client.AppearanceClient"
+		]
+	},
+	"mixins": [
+		"appearance.mixins.json"
+	],
+	"depends": {
+		"minecraft": [
+			"1.19.4"
+		],
+		"fabric": [
+			"*"
+		]
+	},
+	"suggests": {
+	}
+}

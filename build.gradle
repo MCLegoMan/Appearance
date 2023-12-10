@@ -1,5 +1,5 @@
 plugins {
-	id 'org.quiltmc.loom' version '1.4.1'
+	id 'fabric-loom' version '1.4-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -24,18 +24,17 @@ repositories {
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "org.quiltmc:quilt-mappings:${minecraft_version}+build.${quilt_mappings}:intermediary-v2"
-	modImplementation "org.quiltmc:quilt-loader:${project.loader_version}"
-	// QSL for 1.20.2 is not yet available.
-	//modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:${project.qsl_version}"
+	mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	include(modImplementation "com.github.MCLegoMan:releasetypeutils:${project.rtu_version}")
 }
 
 processResources {
 	inputs.property "version", project.version
 
-	filesMatching("quilt.mod.json") {
+	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
 }

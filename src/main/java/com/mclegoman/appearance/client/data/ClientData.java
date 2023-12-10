@@ -1,11 +1,11 @@
 /*
-    Mod Template
+    Appearance
     Contributor(s): MCLegoMan
-    Github: https://github.com/MCLegoMan/Mod-Template
+    Github: https://github.com/MCLegoMan/Appearance
     Licence: GNU LGPLv3
 */
 
-package com.mclegoman.mod_template.client.data;
+package com.mclegoman.appearance.client.data;
 
 import net.minecraft.client.MinecraftClient;
 

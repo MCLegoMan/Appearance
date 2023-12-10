@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.mclegoman.mod_template.mixin",
+	"package": "com.mclegoman.appearance.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"TitleScreenMixin"
+		"AbstractClientPlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
