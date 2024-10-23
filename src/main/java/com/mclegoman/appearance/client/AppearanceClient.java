@@ -17,7 +17,7 @@ import net.minecraft.resource.ResourceType;
 public class AppearanceClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		Data.VERSION.sendToLog(Helper.LogType.INFO, "Initializing Client...");
+		Data.version.sendToLog(Helper.LogType.INFO, "Initializing Client...");
 		ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SkinsDataLoader());
 	}
 }

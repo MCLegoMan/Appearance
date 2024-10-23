@@ -3,7 +3,7 @@
 	"id": "appearance",
 	"version": "${version}",
 	"name": "Appearance",
-	"description": "Fabric/Quilt mod that can change a player's skin via a resource pack. ",
+	"description": "Fabric mod that can change a player's skin via a resource pack. ",
 	"authors": [
 		"MCLegoMan"
 	],
@@ -25,7 +25,7 @@
 	],
 	"depends": {
 		"minecraft": [
-			"1.19.4"
+			"1.21.2"
 		],
 		"fabric": [
 			"*"
